@@ -3,7 +3,7 @@
 ------------
 ### **This is an explanation of what I did here for the test at Codi....**
 
-The project was created using .NET 5, with C#. Basically I divided the program in the Logic folder in two main sections:
+The project was created using .NET 5, with C#.
 
 ## Decisions
 
