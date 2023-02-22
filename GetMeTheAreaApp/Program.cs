@@ -1,5 +1,6 @@
 ﻿using GetMeTheAreaApp.Logic.BusinessLogic.Implement;
 using GetMeTheAreaApp.Logic.Domain.Dto;
+using GetMeTheAreaApp.Logic.Domain.Helpers;
 using System;
 
 namespace GetMeTheAreaApp
@@ -28,22 +29,37 @@ namespace GetMeTheAreaApp
             // Type your username and press enter
             Console.WriteLine("Calculate Shape Area. Please select 1: Cicle or 2: Triangle: ");
             // Create a string variable and get user input from the keyboard and store it in the variable
-            int shape = Int32.Parse(Console.ReadLine());
-            if (shape == 1)
+            SimpleResult<int> shape = new();
+            SimpleResult<int> radio = new();
+            SimpleResult<int> baseV = new();
+            SimpleResult<int> height = new();
+
+            shape = ParseInput.TryParse(Console.ReadLine());
+
+            if (shape.Result == 1)
             {
                 Console.WriteLine("Please enter the radio of the circle (integer only): ");
-                int radio = Int32.Parse(Console.ReadLine());
-                _result = _factory.Area.GetCircleArea(radio);
+                radio = ParseInput.TryParse(Console.ReadLine());
+                if(radio.ExcMessage == "") _result = _factory.Area.GetCircleArea(radio.Result);
+                if(radio.ExcMessage != "") _result.ExcMessage = "Invalid input";
             }
-            if (shape == 2)
+            if (shape.Result == 2)
             {
                 Console.WriteLine("Please enter the base of the trianlge (integer only): ");
-                int baseV = Int32.Parse(Console.ReadLine());
+                baseV = ParseInput.TryParse(Console.ReadLine());
                 Console.WriteLine("Please enter the height of the trianlge (integer only): ");
-                int height = Int32.Parse(Console.ReadLine());
-                _result = _factory.Area.GetTriangleArea(baseV, height);
+                height = ParseInput.TryParse(Console.ReadLine());
+                if(baseV.ExcMessage == "" && height.ExcMessage == "") _result = _factory.Area.GetTriangleArea(baseV.Result, height.Result);
+                if(baseV.ExcMessage != "" || height.ExcMessage != "") _result.ExcMessage = "Invalid input";
             }
+            if (shape.Result == 0) HandleBadParsing(shape.ExcMessage);
+
             return _result;
+        }
+
+        public static void HandleBadParsing(string message)
+        {
+            Console.WriteLine(message);
         }
     }
 }
