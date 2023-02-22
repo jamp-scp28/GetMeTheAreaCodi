@@ -1,0 +1,16 @@
+C:\Users\JorgeM\source\repos\SSIS\GetMeTheAreaApp\GetMeTheAreaApp\obj\Debug\net5.0\GetMeTheAreaApp.csproj.AssemblyReference.cache
+C:\Users\JorgeM\source\repos\SSIS\GetMeTheAreaApp\GetMeTheAreaApp\obj\Debug\net5.0\GetMeTheAreaApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JorgeM\source\repos\SSIS\GetMeTheAreaApp\GetMeTheAreaApp\obj\Debug\net5.0\GetMeTheAreaApp.AssemblyInfoInputs.cache
+C:\Users\JorgeM\source\repos\SSIS\GetMeTheAreaApp\GetMeTheAreaApp\obj\Debug\net5.0\GetMeTheAreaApp.AssemblyInfo.cs
+C:\Users\JorgeM\source\repos\SSIS\GetMeTheAreaApp\GetMeTheAreaApp\obj\Debug\net5.0\GetMeTheAreaApp.csproj.CoreCompileInputs.cache
+C:\Users\JorgeM\source\repos\SSIS\GetMeTheAreaApp\GetMeTheAreaApp\bin\Debug\net5.0\GetMeTheAreaApp.exe
+C:\Users\JorgeM\source\repos\SSIS\GetMeTheAreaApp\GetMeTheAreaApp\bin\Debug\net5.0\GetMeTheAreaApp.deps.json
+C:\Users\JorgeM\source\repos\SSIS\GetMeTheAreaApp\GetMeTheAreaApp\bin\Debug\net5.0\GetMeTheAreaApp.runtimeconfig.json
+C:\Users\JorgeM\source\repos\SSIS\GetMeTheAreaApp\GetMeTheAreaApp\bin\Debug\net5.0\GetMeTheAreaApp.runtimeconfig.dev.json
+C:\Users\JorgeM\source\repos\SSIS\GetMeTheAreaApp\GetMeTheAreaApp\bin\Debug\net5.0\GetMeTheAreaApp.dll
+C:\Users\JorgeM\source\repos\SSIS\GetMeTheAreaApp\GetMeTheAreaApp\bin\Debug\net5.0\GetMeTheAreaApp.pdb
+C:\Users\JorgeM\source\repos\SSIS\GetMeTheAreaApp\GetMeTheAreaApp\obj\Debug\net5.0\GetMeTheAreaApp.dll
+C:\Users\JorgeM\source\repos\SSIS\GetMeTheAreaApp\GetMeTheAreaApp\obj\Debug\net5.0\refint\GetMeTheAreaApp.dll
+C:\Users\JorgeM\source\repos\SSIS\GetMeTheAreaApp\GetMeTheAreaApp\obj\Debug\net5.0\GetMeTheAreaApp.pdb
+C:\Users\JorgeM\source\repos\SSIS\GetMeTheAreaApp\GetMeTheAreaApp\obj\Debug\net5.0\GetMeTheAreaApp.genruntimeconfig.cache
+C:\Users\JorgeM\source\repos\SSIS\GetMeTheAreaApp\GetMeTheAreaApp\obj\Debug\net5.0\ref\GetMeTheAreaApp.dll

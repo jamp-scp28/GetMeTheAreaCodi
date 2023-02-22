@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 
 namespace GetMeTheAreaApp.Logic.Domain.Obj
 {
-    public abstract class ShapeBaseClass<T, R>
+    public abstract class ShapeBaseClass<T, V, RModel>
     {
         /* I defined this common properties thinking that maybe
         * in the future there are going to be other shapes
         * that share virtual methods that wont be override.
         */
         public string ShapeName { get; set; }
-        public List<T> Constants { get; set; }
-        public List<R> NumericValues { get; set; }  
+        public Dictionary<string, T> Constants { get; set; }
+        public Dictionary<string, V> NumericValues { get; set; }  
 
-        public virtual int CalculateArea()
+        public virtual RModel CalculateArea()
         {
             throw new NotImplementedException();
         }
 
-        // 
+        //Other virtual methods That are not going to be override 
     }
 }

@@ -9,7 +9,7 @@ namespace GetMeTheAreaApp.Logic.BusinessLogic.Interface
 {
     public interface IGetTheAreaLogic
     {
-        public SimpleResult<int> GetCircleArea(int radio); 
-        public SimpleResult<int> GetTriangleArea(int baseV, int height); 
+        public SimpleResult<double> GetCircleArea(int radio); 
+        public SimpleResult<double> GetTriangleArea(int baseV, int height); 
     }
 }

@@ -1,5 +1,6 @@
 ﻿using GetMeTheAreaApp.Logic.BusinessLogic.Interface;
 using GetMeTheAreaApp.Logic.Domain.Dto;
+using GetMeTheAreaApp.Logic.Domain.Helpers;
 using GetMeTheAreaApp.Logic.Domain.Obj;
 using System;
 using System.Collections.Generic;
@@ -11,14 +12,29 @@ namespace GetMeTheAreaApp.Logic.BusinessLogic
 {
     public class GetTheAreaLogic : IGetTheAreaLogic
     {
-        public SimpleResult<int> GetCircleArea(int radio)
+        public SimpleResult<double> GetCircleArea(int radio)
         {
-            throw new NotImplementedException();
+            try
+            {
+                GetCircleAreaUtil circleUtility = new GetCircleAreaUtil(radio);
+                return SimpleResult<double>.GetResult("NA", circleUtility.CalculateArea());
+            }catch(Exception ex)
+            {
+                return SimpleResult<double>.GetError(ex.Message, 0);
+            }
         }
 
-        public SimpleResult<int> GetTriangleArea(int baseV, int height)
+        public SimpleResult<double> GetTriangleArea(int baseV, int height)
         {
-            throw new NotImplementedException();
+            try
+            {
+                GetTriangleAreaUtil triangleUtility = new GetTriangleAreaUtil(baseV, height);
+                return SimpleResult<double>.GetResult("NA", triangleUtility.CalculateArea());
+            }
+            catch (Exception ex)
+            {
+                return SimpleResult<double>.GetError(ex.Message, 0);
+            }
         }
     }
 }
